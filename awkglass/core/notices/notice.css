@@ -50,12 +50,12 @@ body::after {
     
     background-color: rgba(46, 0, 58, 0.8);
     
-    background-image: linear-gradient(to right, rgb(178, 102, 255), rgb(178, 102, 255));
+    background-image: linear-gradient(to right, rgb(255, 0, 40), rgb(255, 0, 40));
     background-repeat: no-repeat;
     background-position: bottom left;
     
     color: #ffffff;
-    border: 2px solid rgb(178, 102, 255);
+    border: 2px solid rgb(255, 0, 40);
     padding: 30px;
     padding-bottom: 35px;
     border-radius: 8px;

@@ -3,7 +3,7 @@
  * @author ungiglio
  * @version 25.1
  * @source https://github.com/ungiglio/DiscordDiscordia/
- * @website https://ungiglio.github.io/DiscordDiscordia/
+ * @website https://lucan991.github.io/asusrogdiscord/
  * @description Lande della Discordia implements a glass purple and lightblue details on your client!
  * @authorId 769144538107215872
  * @invite DDaRdZwB4h
@@ -13,7 +13,7 @@
 /* 1. LOADER (don't touch it) */
 /* ======================================================================== */
 
-@import url('https://ungiglio.github.io/DiscordDiscordia/awkglass/loader.css');
+@import url('https://lucan991.github.io/asusrogdiscord/awkglass/loader.css');
 
 
 /* ======================================================================== */
@@ -23,17 +23,17 @@
 :root {
     /* --- BACKGROUND AND IMAGES --- */
     /* Background Image */
-    --custom-image-url: url('https://ungiglio.github.io/DiscordDiscordia/awkglass/assets/bgImg.jpg');
+    --custom-image-url: url('https://lucan991.github.io/asusrogdiscord/awkglass/assets/bgImg.jpg');
 
     /* Image blur (default: 8px) */
     --app-blur: 8px;
     
 
     /* --- MAIN COLORS --- */
-    --rgb-highlight: 178, 102, 255;
+    --rgb-highlight: 255, 0, 40;
 
     /* Danger/Close Button color */
-    --rgb-close-button: 152, 51, 255;
+    --rgb-close-button: 210, 10, 35;
 
 
     /* --- USER STATUS (RGB format) --- */
@@ -49,8 +49,8 @@
     --custom-title-font-family: "Pirata One", var(--font-primary);  /* The font family of the custom title */
 
     /* Home/DM Icon (Discord logo left top) */
-    --custom-logo: url('https://ungiglio.github.io/DiscordDiscordia/awkglass/assets/LandeDiscordia.png');
-    --custom-logo-hover: url('https://ungiglio.github.io/DiscordDiscordia/awkglass/assets/LandeDiscordiaHover.png');
+    --custom-logo: url('https://lucan991.github.io/asusrogdiscord/awkglass/assets/LandeDiscordia.png');
+    --custom-logo-hover: url('https://lucan991.github.io/asusrogdiscord/awkglass/assets/LandeDiscordiaHover.png');
 
     --show-dev-panel-info-static: 0; /* Set to 1 to show the static version, 0 to hide | (NOTE: for static to work also hover need to be 1) */
     --show-dev-panel-info-hover: 1; /* Set to 1 to show the static or hover version, put 0 to hide */
