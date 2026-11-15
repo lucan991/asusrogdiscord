@@ -1,11 +1,9 @@
-cd "/mnt/games/GitHub/Discord Themes/asusrogdiscord"
-
 cat << 'EOF' > README.md
 # ASUS ROG - Republic of Gamers (Discord Theme)
 
 A dark carbon & crimson neon theme inspired by **ASUS Republic of Gamers (ROG)** aesthetics for **Vencord** and **BetterDiscord** (forked and customized from *Lande della Discordia* by `ungiglio`).
 
-![ASUS ROG Theme Preview](https://i.imgur.com/R68Se3G.png)
+![ASUS ROG Theme Preview](https://lucan991.github.io/asusrogdiscord/awkglass/assets/preview.png)
 
 ## Features
 - **Dark Carbon & Crimson Neon** color palette (`#ff0028`) with a custom ROG motherboard background.
@@ -14,8 +12,8 @@ A dark carbon & crimson neon theme inspired by **ASUS Republic of Gamers (ROG)**
 - Performance-optimized with blur disabled by default (`--app-blur: 0px`) to prevent UI lag.
 
 ## Installation
-1. Download [`ASUS-ROG.theme.css`](https://raw.githubusercontent.com/lucan991/asusrogdiscord/main/ASUS-ROG.theme.css) (Right-click -> *Save Link As...*).
-2. Move the file into your client's themes folder:
+1. Download the latest release package: **[Download ASUS-ROG.theme.css](https://github.com/lucan991/asusrogdiscord/releases/latest/download/ASUS-ROG.theme.css)** *(or check the [Releases](https://github.com/lucan991/asusrogdiscord/releases) page)*.
+2. Move `ASUS-ROG.theme.css` into your client's themes folder:
    - **Vencord (Linux):** `~/.config/Vencord/themes/`
    - **BetterDiscord (Linux):** `~/.config/BetterDiscord/themes/`
    - **Windows:** `%appdata%\Vencord\themes\` or `%appdata%\BetterDiscord\themes\`
@@ -29,3 +27,7 @@ You can easily swap the wallpaper or adjust colors inside the `:root` block of `
 ---
 *Credits: Base theme structure by [ungiglio/DiscordDiscordia](https://github.com/ungiglio/DiscordDiscordia)*
 EOF
+
+git add README.md
+git commit -m "Update README with latest Release download link"
+git push origin main

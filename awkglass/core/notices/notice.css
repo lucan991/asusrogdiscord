@@ -48,7 +48,7 @@ body::after {
     left: 50%;
     transform: translate(-50%, -50%);
     
-    background-color: rgba(46, 0, 58, 0.8);
+    background-color: rgba(18, 4, 7, 0.8);
     
     background-image: linear-gradient(to right, rgb(255, 0, 40), rgb(255, 0, 40));
     background-repeat: no-repeat;

@@ -48,7 +48,7 @@
 .vc-notification-root {
     /* vencord update notification */
     border: 1px solid var(--highlighted-channel-color);
-    background: rgba(105, 15, 133, 0.9);
+    background: rgba(18, 4, 7, 0.9);
 }
 
 .vc-notification-progressbar {
@@ -105,7 +105,7 @@
 
 .defaultTextInputWrapper_d274ca {
     /* poll creation responses input area */
-    background-color: rgba(30, 2, 46, 0.596);
+    background-color: rgba(18, 4, 7, 0.596);
 }
 
 .defaultTextInputWrapper_d274ca input {
@@ -115,12 +115,12 @@
 
 .addAnswerButton_mCABKp button {
     /* poll creation add response bg */
-    background-color: rgba(30, 2, 46, 0.3);
+    background-color: rgba(18, 4, 7, 0.3);
     border: 1px solid var(--input-border);
 }
 
 .addAnswerButton_mCABKp:hover button {
     /* poll creation add response bg (hover) */
-    background-color: rgba(30, 2, 46, 0.9);
+    background-color: rgba(18, 4, 7, 0.9);
     border: 1px solid var(--input-border);
 }

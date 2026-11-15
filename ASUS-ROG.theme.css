@@ -205,3 +205,36 @@
     background-color: rgba(255, 0, 40, 0.22) !important;
     color: #ffffff !important;
 }
+/* ======================================================================== */
+/* 6. POPOUT EMOJI / STICKERS / GIFS & SETTINGS VENCORD GRADIENT */
+/* ======================================================================== */
+
+:root,
+.theme-dark {
+    --darkPurple-background: rgba(22, 4, 8, 0.96) !important;
+    --darkPurple-background-hover: rgba(45, 6, 14, 0.96) !important;
+}
+
+/* Panoul de Stickers / GIFs / Emoji (fundal, header si bara de jos) */
+[class*="contentWrapper_"],
+[class*="emojiPicker_"],
+[class*="stickerInspected_"],
+[class*="inspector_"],
+[class*="wrapper_"][class*="drawerSizingWrapper_"] {
+    background-color: rgba(12, 8, 10, 0.97) !important;
+    border: 1px solid rgba(255, 0, 40, 0.45) !important;
+}
+
+/* Header-ul si barele de categorii din panoul Stickers/GIFs */
+[class*="contentWrapper_"] [class*="header_"],
+[class*="categorySection_"] [class*="header_"],
+[class*="navButtonActive_"] {
+    background-color: rgba(26, 5, 9, 0.95) !important;
+    border-color: rgba(255, 0, 40, 0.4) !important;
+}
+
+/* Meniul lateral din User Settings (gradientul de la Plugins / Vencord) */
+[class*="standardSidebarView_"] [class*="sidebarRegionScroller_"] [class*="item_"]::before,
+[class*="standardSidebarView_"] [class*="sidebar_"] [class*="header_"] {
+    background: linear-gradient(to bottom, rgba(35, 5, 11, 0.95), transparent) !important;
+}
