@@ -1,57 +1,31 @@
-[![GitHub Release](https://img.shields.io/github/v/release/ungiglio/DiscordDiscordia)](https://github.com/ungiglio/DiscordDiscordia/releases/latest)
-![license: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-lightgrey)
-[![Discord](https://img.shields.io/discord/1283064177199550536?label=Discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/DDaRdZwB4h)
-![GitHub Repo stars](https://img.shields.io/github/stars/ungiglio/DiscordDiscordia)
+cd "/mnt/games/GitHub/Discord Themes/asusrogdiscord"
 
-<div align="center">
+cat << 'EOF' > README.md
+# ASUS ROG - Republic of Gamers (Discord Theme)
 
-# Lande della Discordia
+A dark carbon & crimson neon theme inspired by **ASUS Republic of Gamers (ROG)** aesthetics for **Vencord** and **BetterDiscord** (forked and customized from *Lande della Discordia* by `ungiglio`).
 
-![Lande della Discordia v25.1](https://i.imgur.com/M9XnhiB.png)
-*screenshot from [latest](https://github.com/ungiglio/DiscordDiscordia/releases/latest) release*
-</div>
+![ASUS ROG Theme Preview](https://lucan991.github.io/asusrogdiscord/awkglass/assets/preview.png)
 
-A custom purple theme to enhance your Discord experience.
+## Features
+- **Dark Carbon & Crimson Neon** color palette (`#ff0028`) with a custom ROG motherboard background.
+- Full styling support for the **Spotify Controls** plugin (Vencord / BetterDiscord).
+- Custom ROG Home icon and top title bar branding (`REPUBLIC OF GAMERS`).
+- Performance-optimized with blur disabled by default (`--app-blur: 0px`) to prevent UI lag.
 
-## About the Theme
+## Installation
+1. Download [`ASUS-ROG.theme.css`](https://raw.githubusercontent.com/lucan991/asusrogdiscord/main/ASUS-ROG.theme.css) (Right-click -> *Save Link As...*).
+2. Move the file into your client's themes folder:
+   - **Vencord (Linux):** `~/.config/Vencord/themes/`
+   - **BetterDiscord (Linux):** `~/.config/BetterDiscord/themes/`
+   - **Windows:** `%appdata%\Vencord\themes\` or `%appdata%\BetterDiscord\themes\`
+3. Open Discord -> **User Settings** -> **Themes** and enable **ASUS ROG - Republic of Gamers**.
 
-"Lande della Discordia" is a Discord theme created by [@ungiglio](https://discord.com/users/769144538107215872) to customize his own Discord client. Now available for everyone who wants to add a touch of elegance to their Discord interface.
-
-The theme features a beautiful purple shade (#b266ff) that transforms your Discord experience into something truly unique.
-
-## Installation [Vencord version]
-
-To install "Lande della Discordia" theme:
-
-1. Download the theme files from [BetterDiscord's themes page](https://betterdiscord.app/theme/Lande%20della%20Discordia) or from this GitHub repository *[see [links](#links) section below]*
-2. Open your Discord client
-3. Navigate to Vencord > Themes
-4. Under "Local Themes", select "Open Themes Folder" and upload the downloaded file named "discordia.theme.css"
-5. Click "Load Missing Themes" and check the toggle near "Lande della Discordia" card
-
-## Installation [BetterDiscord version]
-
-To install "Lande della Discordia" theme:
-
-1. Open your Discord client
-2. Go to discord settings. Near the very bottom, there should be a themes tab. Click it
-3. At the top of the themes page, open the themes store
-4. search for "Lande della Discordia" theme
-
-## Reporting Bugs
-
-If you encounter any issues or have suggestions for improving "Lande della Discordia", please:
-
-- Open an issue on our [GitHub repository](https://github.com/ungiglio/DiscordDiscordia/issues)
-
-## Links
-
-- [Download Theme](https://github.com/ungiglio/DiscordDiscordia/releases/latest)
-- [BetterDiscord Download](https://betterdiscord.app/theme/Lande%20della%20Discordia)
-- [Support Server](https://discord.gg/DDaRdZwB4h)
-- [BetterDiscord](https://betterdiscord.app)
-- [Vencord](https://vencord.dev)
+## Customization
+You can easily swap the wallpaper or adjust colors inside the `:root` block of `ASUS-ROG.theme.css`:
+- `--custom-image-url`: Replace the URL to use your own background image.
+- `--app-blur`: Increase from `0px` (e.g., `4px` or `8px`) if you want a frosted glass background effect.
 
 ---
-
-© 2026 ungiglio. All rights reserved.
+*Credits: Base theme structure by [ungiglio/DiscordDiscordia](https://github.com/ungiglio/DiscordDiscordia)*
+EOF
