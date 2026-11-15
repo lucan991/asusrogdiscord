@@ -20,7 +20,7 @@
     --darkPurple-background: rgb(46, 0, 58); 
     
     /* DEFINIZIONE COLORI SPECIFICI RICHIESTI */
-    --header-cat-rgb: 147, 106, 201;
+    --header-cat-rgb: 255, 0, 40;
     --text-lilac: rgb(175, 145, 230);
     --text-white: rgb(255, 255, 255);
 
@@ -140,7 +140,7 @@
     --text-channel-hover: var(--text-normal);
     --icon-hover: var(--text-channel-hover);
     --highlighted-channel-color: rgb(123, 176, 245);
-    --custom-spoiler-color: rgb(148, 83, 212);
+    --custom-spoiler-color: rgb(255, 0, 40);
 
 
     --ver: "Lande della Discordia (" var(--current-ver)") " var(--file-ver);
