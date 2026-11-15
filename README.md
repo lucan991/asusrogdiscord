@@ -5,7 +5,7 @@ cat << 'EOF' > README.md
 
 A dark carbon & crimson neon theme inspired by **ASUS Republic of Gamers (ROG)** aesthetics for **Vencord** and **BetterDiscord** (forked and customized from *Lande della Discordia* by `ungiglio`).
 
-![https://i.imgur.com/R68Se3G.png](https://lucan991.github.io/asusrogdiscord/awkglass/assets/preview.png)
+![ASUS ROG Theme Preview](https://i.imgur.com/R68Se3G.png)
 
 ## Features
 - **Dark Carbon & Crimson Neon** color palette (`#ff0028`) with a custom ROG motherboard background.
