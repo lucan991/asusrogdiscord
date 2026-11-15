@@ -1,0 +1,302 @@
+/**
+ * @name ASUS ROG - Republic of Gamers
+ * @author lucan991 (based on ungiglio)
+ * @version 1.0
+ * @source https://github.com/lucan991/asusrogdiscord/
+ * @website https://lucan991.github.io/asusrogdiscord/
+ * @description ASUS ROG dark carbon & crimson neon theme.
+ */
+
+@import url('https://lucan991.github.io/asusrogdiscord/awkglass/loader.css');
+
+:root {
+    --custom-image-url: url('https://i.imgur.com/I69EVSj.jpeg');
+    --app-blur: 0px;
+
+    --rgb-highlight: 255, 0, 40;
+    --rgb-close-button: 210, 10, 35;
+
+    --rgb-online-color: 255, 26, 60;
+    --rgb-afk-color: 255, 165, 0;
+    --rgb-dnd-color: 180, 0, 25;
+    --rgb-streaming-color: 255, 65, 90;
+
+    --custom-title-text: "REPUBLIC OF GAMERS";
+    --custom-title-font-size: 14px;
+    --custom-title-font-family: "Rajdhani", "Orbitron", var(--font-primary);
+
+    --custom-logo: url('https://lucan991.github.io/asusrogdiscord/awkglass/assets/rog-logo.png');
+    --custom-logo-hover: url('https://lucan991.github.io/asusrogdiscord/awkglass/assets/rog-logo.png');
+
+    --show-dev-panel-info-static: 0;
+    --show-dev-panel-info-hover: 1;
+}
+
+/* ======================================================================== */
+/* 3. ROG CARBON DARK OVERRIDES & NEON GLOW (COMPLETE FIX) */
+/* ======================================================================== */
+
+:root,
+.theme-dark {
+    /* Fundaluri negru-carbon */
+    --background-primary: rgba(8, 8, 10, 0.90) !important;
+    --background-secondary: rgba(11, 11, 14, 0.93) !important;
+    --background-secondary-alt: rgba(6, 6, 8, 0.96) !important;
+    --background-tertiary: rgba(4, 4, 6, 0.97) !important;
+    --background-floating: rgba(10, 10, 12, 0.97) !important;
+
+    /* Accente principale ROG Red */
+    --brand-experiment: rgb(255, 0, 40) !important;
+    --brand-experiment-560: rgb(215, 0, 34) !important;
+    --brand-experiment-600: rgb(175, 0, 28) !important;
+    --brand-500: rgb(255, 0, 40) !important;
+    --brand-560: rgb(215, 0, 34) !important;
+
+    /* Iconite canale, bara de sus si text interactiv */
+    --channel-icon: rgba(255, 45, 75, 0.85) !important;
+    --channels-default: rgba(210, 195, 198, 0.8) !important;
+    --interactive-normal: rgba(255, 55, 85, 0.85) !important;
+    --interactive-hover: #ffffff !important;
+    --interactive-active: #ff0028 !important;
+
+    /* Caseta de mesaj (Message #general) */
+    --channeltextarea-background: rgba(28, 8, 12, 0.88) !important;
+    --text-muted: rgba(200, 140, 150, 0.65) !important;
+}
+
+/* 1. Iconita Home / LD din stanga-sus (aplicata ca background-image pe div) */
+[class*="tutorialContainer"] [class*="childWrapper"],
+[class*="wrapper_"][data-list-item-id="guildsnav___home"] [class*="childWrapper"] {
+    filter: hue-rotate(105deg) saturate(2.2) brightness(1.1) drop-shadow(0 0 6px rgba(255, 0, 40, 0.85)) !important;
+}
+
+/* 2. Caseta de scriere mesaj (elimina tenta mov de fundal si bordura) */
+[class*="channelTextArea"] [class*="scrollableContainer"],
+[class*="channelTextArea"] [class*="themedBackground"] {
+    background: linear-gradient(90deg, rgba(35, 6, 12, 0.92) 0%, rgba(16, 8, 10, 0.92) 100%) !important;
+    border: 1px solid rgba(255, 0, 40, 0.45) !important;
+    box-shadow: 0 0 12px rgba(255, 0, 40, 0.18) !important;
+}
+
+/* Placeholder-ul "Message #general" si iconitele din caseta de chat */
+[class*="placeholder_"],
+[class*="attachButton"] svg,
+[class*="buttons_"] button svg {
+    color: rgba(255, 60, 88, 0.85) !important;
+}
+
+/* 3. Zona de profil din stanga-jos (Lucian + butoane mic/casti/setari) */
+[class*="panels_"],
+[class*="panels_"] > [class*="container_"] {
+    background: linear-gradient(90deg, rgba(32, 6, 12, 0.94) 0%, rgba(12, 8, 10, 0.94) 100%) !important;
+    border-top: 1px solid rgba(255, 0, 40, 0.35) !important;
+}
+
+[class*="panels_"] button svg {
+    color: rgba(255, 50, 80, 0.9) !important;
+}
+
+/* 4. Iconitele de canale (#, difuzor voice) si iconitele din bara de sus */
+[class*="link_"] [class*="icon_"],
+[class*="toolbar_"] [class*="icon_"] {
+    color: rgba(255, 40, 70, 0.85) !important;
+}
+
+/* Canalul activ (# general) */
+[class*="modeSelected"] [class*="link_"] {
+    background: linear-gradient(90deg, rgba(255, 0, 40, 0.38) 0%, rgba(140, 0, 20, 0.18) 100%) !important;
+    border-left: 3px solid #ff0028 !important;
+}
+
+/* 5. Titlul REPUBLIC OF GAMERS */
+[class*="wordmark"] {
+    color: #ff0028 !important;
+    text-shadow: 0 0 8px rgba(255, 0, 40, 0.8);
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+/* ======================================================================== */
+/* 4. NEON RED CHANNELS & MESSAGE HOVER ACTION BAR */
+/* ======================================================================== */
+
+/* 1. Textul canalelor si al categoriilor din stanga in rosu neon */
+[class*="sidebar_"] [class*="name_"],
+[class*="sidebar_"] [class*="channelName_"] {
+    color: rgba(255, 45, 75, 0.88) !important;
+    text-shadow: 0 0 6px rgba(255, 0, 40, 0.35);
+    transition: all 0.15s ease;
+}
+
+/* Numele categoriilor (ex: "General +", "Voice Channels +") */
+[class*="sidebar_"] [class*="containerDefault_"] [class*="name_"] {
+    color: #ff1a3c !important;
+    text-shadow: 0 0 8px rgba(255, 0, 40, 0.55);
+}
+
+/* Canalul pe care tii cursorul (hover) sau canalul selectat */
+[class*="sidebar_"] [class*="link_"]:hover [class*="name_"],
+[class*="sidebar_"] [class*="modeSelected_"] [class*="name_"],
+[class*="sidebar_"] [class*="modeUnreadImportant_"] [class*="name_"] {
+    color: #ff0028 !important;
+    text-shadow: 0 0 10px rgba(255, 0, 40, 0.9), 0 0 2px #ff4d6a !important;
+}
+
+/* Canalele pe Mute (sa ramana rosu mai stins, nu gri) */
+[class*="sidebar_"] [class*="modeMuted_"] [class*="name_"],
+[class*="sidebar_"] [class*="modeMuted_"] [class*="icon_"] {
+    color: rgba(155, 25, 45, 0.55) !important;
+    text-shadow: none !important;
+}
+
+/* 2. Bara plutitoare mov de la hover pe mesaje (Reply, React, Pin, Delete etc.) */
+[class*="message_"] [class*="buttons_"] [class*="wrapper_"],
+[class*="messageListItem_"] [class*="buttonsInner_"] {
+    background-color: rgba(24, 5, 9, 0.95) !important;
+    border: 1px solid rgba(255, 0, 40, 0.55) !important;
+    box-shadow: 0 0 12px rgba(255, 0, 40, 0.3) !important;
+}
+
+/* Iconitele din bara de hover a mesajului */
+[class*="messageListItem_"] [class*="buttonsInner_"] [class*="button_"] svg {
+    color: rgba(255, 70, 95, 0.9) !important;
+}
+
+[class*="messageListItem_"] [class*="buttonsInner_"] [class*="button_"]:hover {
+    background-color: rgba(255, 0, 40, 0.25) !important;
+}
+
+[class*="messageListItem_"] [class*="buttonsInner_"] [class*="button_"]:hover svg {
+    color: #ffffff !important;
+    filter: drop-shadow(0 0 4px #ff0028);
+}
+
+/* 3. Fundalul subtil al mesajului in sine cand treci cu mouse-ul peste el */
+[class*="message_"]:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 40, 0.08) 0%, rgba(15, 5, 8, 0.4) 100%) !important;
+}
+
+/* ======================================================================== */
+/* 5. FIX LINII CATEGORII, ONLINE/OFFLINE & LOGO PROPRIU ROG */
+/* ======================================================================== */
+
+/* 1. Liniile stanga-dreapta de la categoriile de canale (ex: Voice Channels) */
+[class*="sidebar_"] [class*="containerDefault_"] [class*="wrapper_"]::before,
+[class*="sidebar_"] [class*="containerDefault_"] [class*="mainContent_"]::before {
+    background: linear-gradient(90deg, transparent 0%, #ff0028 100%) !important;
+    box-shadow: 0 0 6px rgba(255, 0, 40, 0.6);
+}
+
+[class*="sidebar_"] [class*="containerDefault_"] [class*="wrapper_"]::after,
+[class*="sidebar_"] [class*="containerDefault_"] [class*="mainContent_"]::after {
+    background: linear-gradient(90deg, #ff0028 0%, transparent 100%) !important;
+    box-shadow: 0 0 6px rgba(255, 0, 40, 0.6);
+}
+
+/* 2. Textul "Online - X" si "Offline - X" din lista de membri din dreapta */
+[class*="membersGroup_"],
+[class*="membersGroup_"] span {
+    color: #ff1a3c !important;
+    text-shadow: 0 0 6px rgba(255, 0, 40, 0.5);
+}
+
+/* 3. Dezactiveaza rotirea culorii (hue-rotate) pe butonul Home pentru a pastra rosu original al ROG logo_red.png */
+[class*="tutorialContainer"] [class*="childWrapper"],
+[class*="wrapper_"][data-list-item-id="guildsnav___home"] [class*="childWrapper"] {
+    filter: drop-shadow(0 0 6px rgba(255, 0, 40, 0.85)) !important;
+    background-size: 75% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+/* ======================================================================== */
+/* 6. SPOTIFY CONTROLS PLUGIN + ULTIMUL FIX MOV & PERFORMANTA */
+/* ======================================================================== */
+
+/* Panoul Spotify Controls (Vencord / BetterDiscord) */
+#vc-spotify-player,
+[class*="spotifyControls"],
+[class*="panels_"] > div[id*="spotify"] {
+    background: linear-gradient(135deg, rgba(28, 4, 9, 0.96) 0%, rgba(10, 8, 10, 0.98) 100%) !important;
+    border: 1px solid rgba(255, 0, 40, 0.65) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 12px rgba(255, 0, 40, 0.25) !important;
+    margin-bottom: 4px !important;
+}
+
+/* Bara de progres Spotify (linia pe care se misca bulina) */
+#vc-spotify-progress-bar [class*="barFill"],
+[class*="spotifyControls"] [class*="barFill"] {
+    background-color: #ff0028 !important;
+}
+
+/* Butoanele Spotify (Shuffle, Prev, Pause, Next, Repeat) */
+#vc-spotify-player button,
+[class*="spotifyControls"] button {
+    color: #ff1a3c !important;
+}
+
+#vc-spotify-player button:hover,
+[class*="spotifyControls"] button:hover {
+    background-color: rgba(255, 0, 40, 0.22) !important;
+    color: #ffffff !important;
+}
+
+/* Fix final pentru liniile din dreapta categoriilor (ex: "General + ----") */
+[class*="sidebar_"] [class*="containerDefault_"] [class*="wrapper_"] *,
+[class*="sidebar_"] [class*="containerDefault_"] [class*="mainContent_"]::before,
+[class*="sidebar_"] [class*="containerDefault_"] [class*="mainContent_"]::after {
+    border-color: #ff0028 !important;
+}
+
+/* Fix final pentru iconita Home "LD" din stanga-sus (daca Base64 nu s-a suprascris peste tema) */
+[data-list-item-id="guildsnav___home"] [class*="childWrapper"] {
+    background-color: rgba(25, 4, 8, 0.95) !important;
+    border: 1px solid rgba(255, 0, 40, 0.6) !important;
+}
+/* ======================================================================== */
+/* 7. FIX FINAL BARILE CATEGORIILOR & ICONITA HOME ROG */
+/* ======================================================================== */
+
+/* Suprascrie liniile orizontale din jurul numelor de categorii (General, Voice Channels) */
+[class*="sidebar_"] [class*="containerDefault_"] [class*="name_"]::before,
+[class*="sidebar_"] [class*="containerDefault_"] [class*="wrapper_"] [class*="name_"]::before {
+    background: linear-gradient(90deg, transparent 0%, #ff0028 100%) !important;
+    background-color: transparent !important;
+}
+
+[class*="sidebar_"] [class*="containerDefault_"] [class*="name_"]::after,
+[class*="sidebar_"] [class*="containerDefault_"] [class*="wrapper_"] [class*="name_"]::after {
+    background: linear-gradient(90deg, #ff0028 0%, transparent 100%) !important;
+    background-color: transparent !important;
+}
+
+/* Forteaza afisarea iconitei ROG din variabila --custom-logo in coltul stanga-sus */
+[data-list-item-id="guildsnav___home"] [class*="childWrapper"] {
+    background-image: var(--custom-logo) !important;
+    background-size: 72% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+[data-list-item-id="guildsnav___home"]:hover [class*="childWrapper"] {
+    background-image: var(--custom-logo-hover) !important;
+}
+
+/* Ascunde iconita vectoriala implicita Discord / LD daca se suprapune peste logo-ul tau */
+[data-list-item-id="guildsnav___home"] [class*="childWrapper"] svg {
+    opacity: 0 !important;
+}
+/* ======================================================================== */
+/* 8. SUPRASCRIERE LINII CATEGORII (General + / Voice Channels +) */
+/* ======================================================================== */
+
+[class*="sidebar_"] [class*="containerDefault_"]::before,
+[class*="sidebar_"] [class*="containerDefault_"] *::before {
+    background: linear-gradient(90deg, transparent 99%, #ff0028 100%) !important;
+    border-color: #ff0028 !important;
+}
+
+[class*="sidebar_"] [class*="containerDefault_"]::after,
+[class*="sidebar_"] [class*="containerDefault_"] *::after {
+    background: linear-gradient(90deg, #ff0028 0%, transparent 100%) !important;
+    border-color: #ff0028 !important;
+}
