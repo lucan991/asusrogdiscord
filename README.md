@@ -1,9 +1,11 @@
+cd "/mnt/games/GitHub/Discord Themes/asusrogdiscord"
+
 cat << 'EOF' > README.md
 # ASUS ROG - Republic of Gamers (Discord Theme)
 
 A dark carbon & crimson neon theme inspired by **ASUS Republic of Gamers (ROG)** aesthetics for **Vencord** and **BetterDiscord** (forked and customized from *Lande della Discordia* by `ungiglio`).
 
-![ASUS ROG Theme Preview](https://lucan991.github.io/asusrogdiscord/awkglass/assets/preview.png)
+![ASUS ROG Theme Preview](https://i.imgur.com/R68Se3G.png)
 
 ## Features
 - **Dark Carbon & Crimson Neon** color palette (`#ff0028`) with a custom ROG motherboard background.
@@ -29,5 +31,5 @@ You can easily swap the wallpaper or adjust colors inside the `:root` block of `
 EOF
 
 git add README.md
-git commit -m "Update README with latest Release download link"
+git commit -m "Update README preview image and Release download link"
 git push origin main
